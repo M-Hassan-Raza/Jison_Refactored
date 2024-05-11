@@ -1,358 +1,357 @@
-var Jison = require("../setup").Jison,
-    Lexer = require("../setup").Lexer,
-    assert = require("assert");
+const Jison = require('../setup').Jison
+const Lexer = require('../setup').Lexer
+const assert = require('assert')
 
-var fs = require('fs');
-var path = require('path');
+const fs = require('fs')
+const path = require('path')
 
-exports["test amd module generator"] = function() {
-    var lexData = {
-        rules: [
-           ["x", "return 'x';"],
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        tokens: "x y",
-        startSymbol: "A",
-        bnf: {
-            "A" :[ 'A x',
-                   'A y',
-                   ''      ]
-        }
-    };
+exports['test amd module generator'] = function () {
+  const lexData = {
+    rules: [
+      ['x', "return 'x';"],
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    tokens: 'x y',
+    startSymbol: 'A',
+    bnf: {
+      A: ['A x',
+        'A y',
+        '']
+    }
+  }
 
-    var input = "xyxxxy";
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const input = 'xyxxxy'
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateAMDModule();
-    var parser = null,
-        define = function(callback){
-            // temporary AMD-style define function, for testing.
-            parser = callback();
-        };
-    eval(parserSource);
+  const parserSource = gen.generateAMDModule()
+  let parser = null
+  const define = function (callback) {
+    // temporary AMD-style define function, for testing.
+    parser = callback()
+  }
+  eval(parserSource)
 
-    assert.ok(parser.parse(input));
-};
+  assert.ok(parser.parse(input))
+}
 
-exports["test commonjs module generator"] = function () {
-    var lexData = {
-        rules: [
-           ["x", "return 'x';"],
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        tokens: "x y",
-        startSymbol: "A",
-        bnf: {
-            "A" :[ 'A x',
-                   'A y',
-                   ''      ]
-        }
-    };
+exports['test commonjs module generator'] = function () {
+  const lexData = {
+    rules: [
+      ['x', "return 'x';"],
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    tokens: 'x y',
+    startSymbol: 'A',
+    bnf: {
+      A: ['A x',
+        'A y',
+        '']
+    }
+  }
 
-    var input = "xyxxxy";
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const input = 'xyxxxy'
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateCommonJSModule();
-    var exports = {};
-    eval(parserSource);
+  const parserSource = gen.generateCommonJSModule()
+  const exports = {}
+  eval(parserSource)
 
-    assert.ok(exports.parse(input));
-};
+  assert.ok(exports.parse(input))
+}
 
-exports["test module generator"] = function () {
-    var lexData = {
-        rules: [
-           ["x", "return 'x';"],
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        tokens: "x y",
-        startSymbol: "A",
-        bnf: {
-            "A" :[ 'A x',
-                   'A y',
-                   ''      ]
-        }
-    };
+exports['test module generator'] = function () {
+  const lexData = {
+    rules: [
+      ['x', "return 'x';"],
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    tokens: 'x y',
+    startSymbol: 'A',
+    bnf: {
+      A: ['A x',
+        'A y',
+        '']
+    }
+  }
 
-    var input = "xyxxxy";
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const input = 'xyxxxy'
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateModule();
-    eval(parserSource);
+  const parserSource = gen.generateModule()
+  eval(parserSource)
 
-    assert.ok(parser.parse(input));
-};
+  assert.ok(parser.parse(input))
+}
 
-exports["test module generator with module name"] = function () {
-    var lexData = {
-        rules: [
-           ["x", "return 'x';"],
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        tokens: "x y",
-        startSymbol: "A",
-        bnf: {
-            "A" :[ 'A x',
-                   'A y',
-                   ''      ]
-        }
-    };
+exports['test module generator with module name'] = function () {
+  const lexData = {
+    rules: [
+      ['x', "return 'x';"],
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    tokens: 'x y',
+    startSymbol: 'A',
+    bnf: {
+      A: ['A x',
+        'A y',
+        '']
+    }
+  }
 
-    var input = "xyxxxy";
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const input = 'xyxxxy'
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generate({moduleType: "js", moduleName: "parsey"});
-    eval(parserSource);
+  const parserSource = gen.generate({ moduleType: 'js', moduleName: 'parsey' })
+  eval(parserSource)
 
-    assert.ok(parsey.parse(input));
-};
+  assert.ok(parsey.parse(input))
+}
 
-exports["test module generator with namespaced module name"] = function () {
-    var lexData = {
-        rules: [
-           ["x", "return 'x';"],
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        tokens: "x y",
-        startSymbol: "A",
-        bnf: {
-            "A" :[ 'A x',
-                   'A y',
-                   ''      ]
-        }
-    };
+exports['test module generator with namespaced module name'] = function () {
+  const lexData = {
+    rules: [
+      ['x', "return 'x';"],
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    tokens: 'x y',
+    startSymbol: 'A',
+    bnf: {
+      A: ['A x',
+        'A y',
+        '']
+    }
+  }
 
-    var compiler = {};
+  const compiler = {}
 
-    var input = "xyxxxy";
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const input = 'xyxxxy'
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateModule({moduleName: "compiler.parser"});
-    eval(parserSource);
+  const parserSource = gen.generateModule({ moduleName: 'compiler.parser' })
+  eval(parserSource)
 
-    assert.ok(compiler.parser.parse(input));
-};
+  assert.ok(compiler.parser.parse(input))
+}
 
-exports["test module include"] = function () {
-    var grammar = {
-    "comment": "ECMA-262 5th Edition, 15.12.1 The JSON Grammar. (Incomplete implementation)",
-    "author": "Zach Carter",
+exports['test module include'] = function () {
+  const grammar = {
+    comment: 'ECMA-262 5th Edition, 15.12.1 The JSON Grammar. (Incomplete implementation)',
+    author: 'Zach Carter',
 
-    "lex": {
-        "macros": {
-            "digit": "[0-9]",
-            "exp": "([eE][-+]?{digit}+)"
-        },
-        "rules": [
-            ["\\s+", "/* skip whitespace */"],
-            ["-?{digit}+(\\.{digit}+)?{exp}?", "return 'NUMBER';"],
-            ["\"[^\"]*", function(){
-                if(yytext.charAt(yyleng-1) == '\\') {
-                    // remove escape
-                    yytext = yytext.substr(0,yyleng-2);
-                    this.more();
-                } else {
-                    yytext = yytext.substr(1); // swallow start quote
-                    this.input(); // swallow end quote
-                    return "STRING";
-                }
-            }],
-            ["\\{", "return '{'"],
-            ["\\}", "return '}'"],
-            ["\\[", "return '['"],
-            ["\\]", "return ']'"],
-            [",", "return ','"],
-            [":", "return ':'"],
-            ["true\\b", "return 'TRUE'"],
-            ["false\\b", "return 'FALSE'"],
-            ["null\\b", "return 'NULL'"]
-        ]
+    lex: {
+      macros: {
+        digit: '[0-9]',
+        exp: '([eE][-+]?{digit}+)'
+      },
+      rules: [
+        ['\\s+', '/* skip whitespace */'],
+        ['-?{digit}+(\\.{digit}+)?{exp}?', "return 'NUMBER';"],
+        ['"[^"]*', function () {
+          if (yytext.charAt(yyleng - 1) == '\\') {
+            // remove escape
+            yytext = yytext.substr(0, yyleng - 2)
+            this.more()
+          } else {
+            yytext = yytext.substr(1) // swallow start quote
+            this.input() // swallow end quote
+            return 'STRING'
+          }
+        }],
+        ['\\{', "return '{'"],
+        ['\\}', "return '}'"],
+        ['\\[', "return '['"],
+        ['\\]', "return ']'"],
+        [',', "return ','"],
+        [':', "return ':'"],
+        ['true\\b', "return 'TRUE'"],
+        ['false\\b', "return 'FALSE'"],
+        ['null\\b', "return 'NULL'"]
+      ]
     },
 
-    "tokens": "STRING NUMBER { } [ ] , : TRUE FALSE NULL",
-    "start": "JSONText",
+    tokens: 'STRING NUMBER { } [ ] , : TRUE FALSE NULL',
+    start: 'JSONText',
 
-    "bnf": {
-        "JSONString": [ "STRING" ],
+    bnf: {
+      JSONString: ['STRING'],
 
-        "JSONNumber": [ "NUMBER" ],
+      JSONNumber: ['NUMBER'],
 
-        "JSONBooleanLiteral": [ "TRUE", "FALSE" ],
+      JSONBooleanLiteral: ['TRUE', 'FALSE'],
 
+      JSONText: ['JSONValue'],
 
-        "JSONText": [ "JSONValue" ],
+      JSONValue: ['JSONNullLiteral',
+        'JSONBooleanLiteral',
+        'JSONString',
+        'JSONNumber',
+        'JSONObject',
+        'JSONArray'],
 
-        "JSONValue": [ "JSONNullLiteral",
-                       "JSONBooleanLiteral",
-                       "JSONString",
-                       "JSONNumber",
-                       "JSONObject",
-                       "JSONArray" ],
+      JSONObject: ['{ }',
+        '{ JSONMemberList }'],
 
-        "JSONObject": [ "{ }",
-                        "{ JSONMemberList }" ],
+      JSONMember: ['JSONString : JSONValue'],
 
-        "JSONMember": [ "JSONString : JSONValue" ],
+      JSONMemberList: ['JSONMember',
+        'JSONMemberList , JSONMember'],
 
-        "JSONMemberList": [ "JSONMember",
-                              "JSONMemberList , JSONMember" ],
+      JSONArray: ['[ ]',
+        '[ JSONElementList ]'],
 
-        "JSONArray": [ "[ ]",
-                       "[ JSONElementList ]" ],
-
-        "JSONElementList": [ "JSONValue",
-                             "JSONElementList , JSONValue" ]
+      JSONElementList: ['JSONValue',
+        'JSONElementList , JSONValue']
     }
-};
+  }
 
-    var gen = new Jison.Generator(grammar);
+  const gen = new Jison.Generator(grammar)
 
-    var parserSource = gen.generateModule();
-    eval(parserSource);
+  const parserSource = gen.generateModule()
+  eval(parserSource)
 
-    assert.ok(parser.parse(JSON.stringify(grammar.bnf)));
-};
+  assert.ok(parser.parse(JSON.stringify(grammar.bnf)))
+}
 
-exports["test module include code"] = function () {
-    var lexData = {
-        rules: [
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        bnf: {
-            "E"   :[ ["E y", "return test();"],
-                     "" ]
-        },
-        moduleInclude: "function test(val) { return 1; }"
-    };
+exports['test module include code'] = function () {
+  const lexData = {
+    rules: [
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    bnf: {
+      E: [['E y', 'return test();'],
+        '']
+    },
+    moduleInclude: 'function test(val) { return 1; }'
+  }
 
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateCommonJSModule();
-    var exports = {};
-    eval(parserSource);
+  const parserSource = gen.generateCommonJSModule()
+  const exports = {}
+  eval(parserSource)
 
-    assert.equal(parser.parse('y'), 1, "semantic action");
-};
+  assert.equal(parser.parse('y'), 1, 'semantic action')
+}
 
-exports["test lexer module include code"] = function () {
-    var lexData = {
-        rules: [
-           ["y", "return test();"]
-        ],
-        moduleInclude: "function test() { return 1; }"
-    };
-    var grammar = {
-        bnf: {
-            "E"   :[ ["E y", "return $2;"],
-                     "" ]
-        }
-    };
+exports['test lexer module include code'] = function () {
+  const lexData = {
+    rules: [
+      ['y', 'return test();']
+    ],
+    moduleInclude: 'function test() { return 1; }'
+  }
+  const grammar = {
+    bnf: {
+      E: [['E y', 'return $2;'],
+        '']
+    }
+  }
 
-    var gen = new Jison.Generator(grammar);
-    gen.lexer = new Lexer(lexData);
+  const gen = new Jison.Generator(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateCommonJSModule();
-    var exports = {};
-    eval(parserSource);
+  const parserSource = gen.generateCommonJSModule()
+  const exports = {}
+  eval(parserSource)
 
-    assert.equal(parser.parse('y'), 1, "semantic action");
-};
+  assert.equal(parser.parse('y'), 1, 'semantic action')
+}
 
-exports["test generated parser instance creation"] = function () {
-    var grammar = {
-        lex: {
-            rules: [
-               ["y", "return 'y'"]
-            ]
-        },
-        bnf: {
-            "E"   :[ ["E y", "return $2;"],
-                     "" ]
-        }
-    };
+exports['test generated parser instance creation'] = function () {
+  const grammar = {
+    lex: {
+      rules: [
+        ['y', "return 'y'"]
+      ]
+    },
+    bnf: {
+      E: [['E y', 'return $2;'],
+        '']
+    }
+  }
 
-    var gen = new Jison.Generator(grammar);
+  const gen = new Jison.Generator(grammar)
 
-    var parserSource = gen.generateModule();
-    eval(parserSource);
+  const parserSource = gen.generateModule()
+  eval(parserSource)
 
-    var p = new parser.Parser;
+  const p = new parser.Parser()
 
-    assert.equal(p.parse('y'), 'y', "semantic action");
+  assert.equal(p.parse('y'), 'y', 'semantic action')
 
-    parser.blah = true;
+  parser.blah = true
 
-    assert.notEqual(parser.blah, p.blah, "shouldn't inherit props");
-};
+  assert.notEqual(parser.blah, p.blah, "shouldn't inherit props")
+}
 
-exports["test module include code using generator from parser"] = function () {
-    var lexData = {
-        rules: [
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        bnf: {
-            "E"   :[ ["E y", "return test();"],
-                     "" ]
-        },
-        moduleInclude: "function test(val) { return 1; }"
-    };
+exports['test module include code using generator from parser'] = function () {
+  const lexData = {
+    rules: [
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    bnf: {
+      E: [['E y', 'return test();'],
+        '']
+    },
+    moduleInclude: 'function test(val) { return 1; }'
+  }
 
-    var gen = new Jison.Parser(grammar);
-    gen.lexer = new Lexer(lexData);
+  const gen = new Jison.Parser(grammar)
+  gen.lexer = new Lexer(lexData)
 
-    var parserSource = gen.generateCommonJSModule();
-    var exports = {};
-    eval(parserSource);
+  const parserSource = gen.generateCommonJSModule()
+  const exports = {}
+  eval(parserSource)
 
-    assert.equal(parser.parse('y'), 1, "semantic action");
-};
+  assert.equal(parser.parse('y'), 1, 'semantic action')
+}
 
-exports["test module include with each generator type"] = function () {
-    var lexData = {
-        rules: [
-           ["y", "return 'y';"]
-        ]
-    };
-    var grammar = {
-        bnf: {
-            "E"   :[ ["E y", "return test();"],
-                     "" ]
-        },
-        moduleInclude: "var TEST_VAR;"
-    };
+exports['test module include with each generator type'] = function () {
+  const lexData = {
+    rules: [
+      ['y', "return 'y';"]
+    ]
+  }
+  const grammar = {
+    bnf: {
+      E: [['E y', 'return test();'],
+        '']
+    },
+    moduleInclude: 'var TEST_VAR;'
+  }
 
-    var gen = new Jison.Parser(grammar);
-    gen.lexer = new Lexer(lexData);
-    ['generateModule', 'generateAMDModule', 'generateCommonJSModule']
-    .map(function(type) {
-      var source = gen[type]();
-      assert.ok(/TEST_VAR/.test(source), type + " supports module include");
-    });
-};
+  const gen = new Jison.Parser(grammar)
+  gen.lexer = new Lexer(lexData);
+  ['generateModule', 'generateAMDModule', 'generateCommonJSModule']
+    .map(function (type) {
+      const source = gen[type]()
+      assert.ok(/TEST_VAR/.test(source), type + ' supports module include')
+    })
+}
 
 // test for issue #246
-exports["test compiling a parser/lexer"] = function () {
-    var grammar =
+exports['test compiling a parser/lexer'] = function () {
+  const grammar =
       '// Simple "happy happy joy joy" parser, written by Nolan Lawson\n' +
       '// Based on the song of the same name.\n\n' +
       '%lex\n%%\n\n\\s+                   /* skip whitespace */\n' +
@@ -364,18 +363,18 @@ exports["test compiling a parser/lexer"] = function () {
       'expressions\n    : e EOF\n        {return $1;}\n    ;\n\n' +
       'e\n    : phrase+ \'joy\'? -> $1 + \' \' + yytext \n    ;\n\n' +
       'phrase\n    : \'happy\' \'happy\' \'joy\' \'joy\' ' +
-      ' -> [$1, $2, $3, $4].join(\' \'); \n    ;';
+      ' -> [$1, $2, $3, $4].join(\' \'); \n    ;'
 
-    var parser = new Jison.Parser(grammar);
-    var generated = parser.generate();
+  const parser = new Jison.Parser(grammar)
+  const generated = parser.generate()
 
-    var tmpFile = path.resolve(__dirname, 'tmp-parser.js');
-    fs.writeFileSync(tmpFile, generated);
-    var parser2 = require('./tmp-parser');
+  const tmpFile = path.resolve(__dirname, 'tmp-parser.js')
+  fs.writeFileSync(tmpFile, generated)
+  const parser2 = require('./tmp-parser')
 
-    assert.ok(parser.parse('happy happy joy joy joy') === 'happy happy joy joy joy',
-      'original parser works');
-    assert.ok(parser2.parse('happy happy joy joy joy') === 'happy happy joy joy joy',
-      'generated parser works');
-    fs.unlinkSync(tmpFile);
-};
+  assert.ok(parser.parse('happy happy joy joy joy') === 'happy happy joy joy joy',
+    'original parser works')
+  assert.ok(parser2.parse('happy happy joy joy joy') === 'happy happy joy joy joy',
+    'generated parser works')
+  fs.unlinkSync(tmpFile)
+}
