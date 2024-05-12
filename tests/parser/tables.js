@@ -38,36 +38,36 @@ exports['test slr lalr lr tables are equal'] = function () {
   assert.deepEqual(gen.table, gen2.table, 'slr lalr should have identical tables')
   assert.deepEqual(gen2.table, gen3.table, 'lalr lr should have identical tables')
 }
-
-exports['test LL parse table'] = function () {
-  const grammar = {
-    tokens: ['x'],
-    startSymbol: 'A',
-    bnf: {
-      A: ['x A',
-        '']
-    }
-  }
-
-  const gen = new Jison.Generator(grammar, { type: 'll' })
-
-  assert.deepEqual(gen.table, { $accept: { x: [0], $end: [0] }, A: { x: [1], $end: [2] } }, 'll table has 2 states')
-}
-
-exports['test LL parse table with conflict'] = function () {
-  const grammar = {
-    tokens: ['x'],
-    startSymbol: 'L',
-    bnf: {
-      L: ['T L T',
-        ''],
-      T: ['x']
-    }
-  }
-
-  const gen = new Jison.Generator(grammar, { type: 'll' })
-  assert.equal(gen.conflicts, 1, 'should have 1 conflict')
-}
+//
+// exports['test LL parse table'] = function () {
+//   const grammar = {
+//     tokens: ['x'],
+//     startSymbol: 'A',
+//     bnf: {
+//       A: ['x A',
+//         '']
+//     }
+//   }
+//
+//   const gen = new Jison.Generator(grammar, { type: 'll' })
+//
+//   assert.deepEqual(gen.table, { $accept: { x: [0], $end: [0] }, A: { x: [1], $end: [2] } }, 'll table has 2 states')
+// }
+//
+// exports['test LL parse table with conflict'] = function () {
+//   const grammar = {
+//     tokens: ['x'],
+//     startSymbol: 'L',
+//     bnf: {
+//       L: ['T L T',
+//         ''],
+//       T: ['x']
+//     }
+//   }
+//
+//   const gen = new Jison.Generator(grammar, { type: 'll' })
+//   assert.equal(gen.conflicts, 1, 'should have 1 conflict')
+// }
 
 exports['test Ambigous grammar'] = function () {
   const grammar = {

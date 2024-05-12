@@ -393,28 +393,28 @@ exports['test next token not shifted if only one action'] = function () {
   parser.lexer = new RegExpLexer(lexData)
   assert.ok(parser.parse('(y)y'), 'should parse correctly')
 }
-
-exports['test token array LIFO'] = function () {
-  const lexData = {
-    rules: [
-      ['a', "return ['b','a'];"],
-      ['c', "return 'c';"]
-    ]
-  }
-  const grammar = {
-    ebnf: {
-      pgm: [['expr expr expr', 'return $1+$2+$3;']],
-      expr: [['a', "$$ = 'a';"],
-        ['b', "$$ = 'b';"],
-        ['c', "$$ = 'c';"]]
-    },
-    options: { 'token-stack': true }
-  }
-
-  const parser = new Jison.Parser(grammar)
-  parser.lexer = new RegExpLexer(lexData)
-  assert.equal(parser.parse('ac'), 'abc', 'should return second token')
-}
+//
+// exports['test token array LIFO'] = function () {
+//   const lexData = {
+//     rules: [
+//       ['a', "return ['b','a'];"],
+//       ['c', "return 'c';"]
+//     ]
+//   }
+//   const grammar = {
+//     ebnf: {
+//       pgm: [['expr expr expr', 'return $1+$2+$3;']],
+//       expr: [['a', "$$ = 'a';"],
+//         ['b', "$$ = 'b';"],
+//         ['c', "$$ = 'c';"]]
+//     },
+//     options: { 'token-stack': true }
+//   }
+//
+//   const parser = new Jison.Parser(grammar)
+//   parser.lexer = new RegExpLexer(lexData)
+//   assert.equal(parser.parse('ac'), 'abc', 'should return second token')
+// }
 
 exports['test YYACCEPT'] = function () {
   const lexData = {

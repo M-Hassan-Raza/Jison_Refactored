@@ -39,8 +39,8 @@ exports['test right-recursive nullable grammar'] = function () {
 
   const gen = new Jison.Generator(grammar, { type: 'lr0' })
 
-  assert.ok(gen.table.length == 4, 'table has 4 states')
-  assert.ok(gen.conflicts == 2, 'encountered 2 conflicts')
+  assert.ok(gen.table.length === 4, 'table has 4 states')
+  assert.ok(gen.conflicts === 2, 'encountered 2 conflicts')
 }
 
 exports['test 0+0 grammar'] = function () {

@@ -1,0 +1,1290 @@
+
+> jison@0.4.18 lint
+> eslint ./
+
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\entry.js
+  1:1  error  'Jison' is not defined  no-undef
+  2:1  error  'bnf' is not defined    no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\cli.js
+  71:5  error  'grammar' is never reassigned. Use 'const' instead  prefer-const
+  72:5  error  'parser' is never reassigned. Use 'const' instead   prefer-const
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\jison.js
+   33:37  error  'puts' is not defined                                            no-undef
+   35:17  error  'print' is not defined                                           no-undef
+  345:17  error  'tokenStack' is not defined                                      no-undef
+  345:37  error  'lexer' is not defined                                           no-undef
+  345:52  error  'EOF' is not defined                                             no-undef
+  349:9   error  'tokenStack' is not defined                                      no-undef
+  350:17  error  'tokenStack' is not defined                                      no-undef
+  352:15  error  'self' is not defined                                            no-undef
+  450:12  error  Expected a conditional expression and instead saw an assignment  no-cond-assign
+  878:15  error  'follows' is assigned a value but never used                     no-unused-vars
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\mixins\lookaheadMixin.js
+  3:30  error  'lookaheadDebug' is not defined  no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\mixins\lrGeneratorMixin.js
+   15:28  error  'lrGeneratorDebug' is not defined  no-undef
+  432:13  error  eval can be harmful                no-eval
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\util\set.js
+  73:1  warning  Unexpected var, use let or const instead  no-var
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\util\typal.js
+  41:11  error    'self' is assigned a value but never used  no-unused-vars
+  42:10  warning  Unexpected var, use let or const instead   no-var
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\lib\utils.js
+  16:9   error    '_shift' is assigned a value but never used   no-unused-vars
+  18:9   error    '_accept' is assigned a value but never used  no-unused-vars
+  97:10  warning  Unexpected var, use let or const instead      no-var
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\ports\comments.js
+   13:11   error  Unreachable code                                             no-unreachable
+   15:11   error  Unreachable code                                             no-unreachable
+   19:11   error  Unreachable code                                             no-unreachable
+   49:20   error  'convertToSyntax' is not defined                             no-undef
+   61:20   error  'convertToSyntax' is not defined                             no-undef
+   73:20   error  'convertToSyntax' is not defined                             no-undef
+   77:20   error  'convertToSyntax' is not defined                             no-undef
+   96:184  error  'TERROR' is assigned a value but never used                  no-unused-vars
+   96:202  error  'EOF' is assigned a value but never used                     no-unused-vars
+  106:16   error  'popStack' is defined but never used                         no-unused-vars
+  119:66   error  'a' is defined but never used                                no-unused-vars
+  142:92   error  Expected '===' and instead saw '=='                          eqeqeq
+  194:7    error  Unreachable code                                             no-unreachable
+  308:11   error  'col' is defined but never used                              no-unused-vars
+  342:19   error  Unnecessary '.call()'                                        no-useless-call
+  378:51   error  Identifier '$avoiding_name_collisions' is not in camel case  camelcase
+  379:15   error  'YYSTATE' is assigned a value but never used                 no-unused-vars
+  380:17   error  Identifier '$avoiding_name_collisions' is not in camel case  camelcase
+  386:13   error  Unreachable code                                             no-unreachable
+  391:13   error  Unreachable code                                             no-unreachable
+  395:13   error  Unreachable code                                             no-unreachable
+  400:13   error  Unreachable code                                             no-unreachable
+  406:13   error  Unreachable code                                             no-unreachable
+  411:13   error  Unreachable code                                             no-unreachable
+  415:13   error  Unreachable code                                             no-unreachable
+  421:13   error  Unreachable code                                             no-unreachable
+  425:13   error  Unreachable code                                             no-unreachable
+  430:13   error  Unreachable code                                             no-unreachable
+  435:13   error  Unreachable code                                             no-unreachable
+  441:13   error  Unreachable code                                             no-unreachable
+  443:13   error  Unreachable code                                             no-unreachable
+  445:13   error  Unreachable code                                             no-unreachable
+  447:13   error  Unreachable code                                             no-unreachable
+  449:13   error  Unreachable code                                             no-unreachable
+  451:13   error  Unreachable code                                             no-unreachable
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\ports\csharp\Jison\Jison\Test\formula.js
+    72:1   warning  Unexpected var, use let or const instead                     no-var
+    85:11  error    Unreachable code                                             no-unreachable
+    93:1   error    Unexpected tab character                                     no-tabs
+    94:1   error    Unexpected tab character                                     no-tabs
+   116:1   error    Unexpected tab character                                     no-tabs
+   117:1   error    Unexpected tab character                                     no-tabs
+   118:1   error    Unexpected tab character                                     no-tabs
+   128:1   error    Unexpected tab character                                     no-tabs
+   129:1   error    Unexpected tab character                                     no-tabs
+   130:1   error    Unexpected tab character                                     no-tabs
+   141:1   error    Unexpected tab character                                     no-tabs
+   142:1   error    Unexpected tab character                                     no-tabs
+   143:1   error    Unexpected tab character                                     no-tabs
+   154:1   error    Unexpected tab character                                     no-tabs
+   155:1   error    Unexpected tab character                                     no-tabs
+   156:1   error    Unexpected tab character                                     no-tabs
+   157:1   error    Unexpected tab character                                     no-tabs
+   158:1   error    Unexpected tab character                                     no-tabs
+   159:1   error    Unexpected tab character                                     no-tabs
+   162:1   error    Unexpected tab character                                     no-tabs
+   163:1   error    Unexpected tab character                                     no-tabs
+   164:1   error    Unexpected tab character                                     no-tabs
+   165:1   error    Unexpected tab character                                     no-tabs
+   166:1   error    Unexpected tab character                                     no-tabs
+   167:1   error    Unexpected tab character                                     no-tabs
+   168:1   error    Unexpected tab character                                     no-tabs
+   169:1   error    Unexpected tab character                                     no-tabs
+   170:1   error    Unexpected tab character                                     no-tabs
+   171:1   error    Unexpected tab character                                     no-tabs
+   187:1   error    Unexpected tab character                                     no-tabs
+   188:1   error    Unexpected tab character                                     no-tabs
+   189:1   error    Unexpected tab character                                     no-tabs
+   199:1   error    Unexpected tab character                                     no-tabs
+   200:1   error    Unexpected tab character                                     no-tabs
+   201:1   error    Unexpected tab character                                     no-tabs
+   206:37  error    Expected '!==' and instead saw '!='                          eqeqeq
+   216:1   error    Unexpected tab character                                     no-tabs
+   217:1   error    Unexpected tab character                                     no-tabs
+   218:1   error    Unexpected tab character                                     no-tabs
+   223:31  error    Expected '!==' and instead saw '!='                          eqeqeq
+   232:1   error    Unexpected tab character                                     no-tabs
+   233:1   error    Unexpected tab character                                     no-tabs
+   234:1   error    Unexpected tab character                                     no-tabs
+   244:1   error    Unexpected tab character                                     no-tabs
+   245:1   error    Unexpected tab character                                     no-tabs
+   246:1   error    Unexpected tab character                                     no-tabs
+   256:1   error    Unexpected tab character                                     no-tabs
+   257:1   error    Unexpected tab character                                     no-tabs
+   258:1   error    Unexpected tab character                                     no-tabs
+   272:1   error    Unexpected tab character                                     no-tabs
+   273:1   error    Unexpected tab character                                     no-tabs
+   274:1   error    Unexpected tab character                                     no-tabs
+   287:1   error    Unexpected tab character                                     no-tabs
+   288:1   error    Unexpected tab character                                     no-tabs
+   289:1   error    Unexpected tab character                                     no-tabs
+   302:1   error    Unexpected tab character                                     no-tabs
+   303:1   error    Unexpected tab character                                     no-tabs
+   304:1   error    Unexpected tab character                                     no-tabs
+   309:11  warning  Unexpected var, use let or const instead                     no-var
+   310:11  warning  Unexpected var, use let or const instead                     no-var
+   310:15  error    'n2' is assigned a value but never used                      no-unused-vars
+   320:1   error    Unexpected tab character                                     no-tabs
+   321:1   error    Unexpected tab character                                     no-tabs
+   322:1   error    Unexpected tab character                                     no-tabs
+   327:11  warning  Unexpected var, use let or const instead                     no-var
+   327:15  error    'n1' is already defined                                      no-redeclare
+   334:1   error    Unexpected tab character                                     no-tabs
+   335:1   error    Unexpected tab character                                     no-tabs
+   336:1   error    Unexpected tab character                                     no-tabs
+   341:11  warning  Unexpected var, use let or const instead                     no-var
+   341:15  error    'n1' is already defined                                      no-redeclare
+   348:1   error    Unexpected tab character                                     no-tabs
+   349:1   error    Unexpected tab character                                     no-tabs
+   350:1   error    Unexpected tab character                                     no-tabs
+   362:1   error    Unexpected tab character                                     no-tabs
+   363:1   error    Unexpected tab character                                     no-tabs
+   373:1   error    Unexpected tab character                                     no-tabs
+   374:1   error    Unexpected tab character                                     no-tabs
+   384:1   error    Unexpected tab character                                     no-tabs
+   385:1   error    Unexpected tab character                                     no-tabs
+   395:1   error    Unexpected tab character                                     no-tabs
+   396:1   error    Unexpected tab character                                     no-tabs
+   406:1   error    Unexpected tab character                                     no-tabs
+   407:1   error    Unexpected tab character                                     no-tabs
+   417:1   error    Unexpected tab character                                     no-tabs
+   418:1   error    Unexpected tab character                                     no-tabs
+   428:1   error    Unexpected tab character                                     no-tabs
+   429:1   error    Unexpected tab character                                     no-tabs
+   439:1   error    Unexpected tab character                                     no-tabs
+   440:1   error    Unexpected tab character                                     no-tabs
+   450:1   error    Unexpected tab character                                     no-tabs
+   451:1   error    Unexpected tab character                                     no-tabs
+   456:1   error    Unexpected tab character                                     no-tabs
+   456:1   error    Mixed spaces and tabs                                        no-mixed-spaces-and-tabs
+   457:1   error    Unexpected tab character                                     no-tabs
+   457:1   error    Mixed spaces and tabs                                        no-mixed-spaces-and-tabs
+   460:1   error    Unexpected tab character                                     no-tabs
+   461:1   error    Unexpected tab character                                     no-tabs
+   462:1   error    Unexpected tab character                                     no-tabs
+   465:1   error    Unexpected tab character                                     no-tabs
+   466:1   error    Unexpected tab character                                     no-tabs
+   467:1   error    Unexpected tab character                                     no-tabs
+   472:1   error    Unexpected tab character                                     no-tabs
+   472:1   error    Mixed spaces and tabs                                        no-mixed-spaces-and-tabs
+   473:1   error    Unexpected tab character                                     no-tabs
+   473:1   error    Mixed spaces and tabs                                        no-mixed-spaces-and-tabs
+   476:1   error    Unexpected tab character                                     no-tabs
+   477:1   error    Unexpected tab character                                     no-tabs
+   478:1   error    Unexpected tab character                                     no-tabs
+   481:1   error    Unexpected tab character                                     no-tabs
+   482:1   error    Unexpected tab character                                     no-tabs
+   483:1   error    Unexpected tab character                                     no-tabs
+   493:1   error    Unexpected tab character                                     no-tabs
+   494:1   error    Unexpected tab character                                     no-tabs
+   499:21  error    '$' is not defined                                           no-undef
+   503:1   error    Unexpected tab character                                     no-tabs
+   504:1   error    Unexpected tab character                                     no-tabs
+   505:1   error    Unexpected tab character                                     no-tabs
+   508:1   error    Unexpected tab character                                     no-tabs
+   509:1   error    Unexpected tab character                                     no-tabs
+   510:1   error    Unexpected tab character                                     no-tabs
+   518:1   error    Unexpected tab character                                     no-tabs
+   519:1   error    Unexpected tab character                                     no-tabs
+   520:1   error    Unexpected tab character                                     no-tabs
+   530:1   error    Unexpected tab character                                     no-tabs
+   531:1   error    Unexpected tab character                                     no-tabs
+   532:1   error    Unexpected tab character                                     no-tabs
+   533:1   error    Unexpected tab character                                     no-tabs
+   544:1   error    Unexpected tab character                                     no-tabs
+   545:1   error    Unexpected tab character                                     no-tabs
+   546:1   error    Unexpected tab character                                     no-tabs
+   556:1   error    Unexpected tab character                                     no-tabs
+   557:1   error    Unexpected tab character                                     no-tabs
+   558:1   error    Unexpected tab character                                     no-tabs
+   568:1   error    Unexpected tab character                                     no-tabs
+   569:1   error    Unexpected tab character                                     no-tabs
+   570:1   error    Unexpected tab character                                     no-tabs
+   633:66  error    'a' is defined but never used                                no-unused-vars
+   649:9   error    Identifier '_handle_error' is not in camel case              camelcase
+   649:9   error    Unexpected labeled statement                                 no-labels
+   652:11  warning  Unexpected var, use let or const instead                     no-var
+   652:15  error    Identifier 'error_rule_depth' is not in camel case           camelcase
+   658:17  error    Identifier 'stack_probe' is not in camel case                camelcase
+   667:34  error    Identifier 'stack_probe' is not in camel case                camelcase
+   670:15  error    Identifier 'stack_probe' is not in camel case                camelcase
+   671:29  error    Identifier 'stack_probe' is not in camel case                camelcase
+   678:13  error    Identifier 'error_rule_depth' is not in camel case           camelcase
+   691:43  error    Expected '===' and instead saw '=='                          eqeqeq
+   701:29  error    Identifier 'error_rule_depth' is not in camel case           camelcase
+   704:13  error    Identifier 'error_rule_depth' is not in camel case           camelcase
+   708:26  error    Expected '===' and instead saw '=='                          eqeqeq
+   722:15  error    Identifier 'error_rule_depth' is not in camel case           camelcase
+   727:36  error    Expected '===' and instead saw '=='                          eqeqeq
+   808:7   error    Unreachable code                                             no-unreachable
+   818:26  error    A constructor name should not start with a lowercase letter  new-cap
+   823:29  error    A constructor name should not start with a lowercase letter  new-cap
+   970:36  error    Identifier 'indexed_rule' is not in camel case               camelcase
+  1002:9   error    'lines' is never reassigned. Use 'const' instead             prefer-const
+  1025:9   error    'token' is never reassigned. Use 'const' instead             prefer-const
+  1025:17  error    Unnecessary '.call()'                                        no-useless-call
+  1153:51  error    Identifier '$avoiding_name_collisions' is not in camel case  camelcase
+  1154:15  error    'YYSTATE' is assigned a value but never used                 no-unused-vars
+  1155:17  error    Identifier '$avoiding_name_collisions' is not in camel case  camelcase
+  1159:13  error    Unreachable code                                             no-unreachable
+  1161:13  error    Unreachable code                                             no-unreachable
+  1163:13  error    Unreachable code                                             no-unreachable
+  1165:13  error    Unreachable code                                             no-unreachable
+  1167:13  error    Unreachable code                                             no-unreachable
+  1170:29  error    Expected '===' and instead saw '=='                          eqeqeq
+  1174:1   error    Unexpected tab character                                     no-tabs
+  1175:1   error    Unexpected tab character                                     no-tabs
+  1176:1   error    Unexpected tab character                                     no-tabs
+  1179:1   error    Unexpected tab character                                     no-tabs
+  1180:1   error    Unexpected tab character                                     no-tabs
+  1181:1   error    Unexpected tab character                                     no-tabs
+  1183:13  error    Unreachable code                                             no-unreachable
+  1186:29  error    Expected '===' and instead saw '=='                          eqeqeq
+  1190:1   error    Unexpected tab character                                     no-tabs
+  1191:1   error    Unexpected tab character                                     no-tabs
+  1192:1   error    Unexpected tab character                                     no-tabs
+  1195:1   error    Unexpected tab character                                     no-tabs
+  1196:1   error    Unexpected tab character                                     no-tabs
+  1197:1   error    Unexpected tab character                                     no-tabs
+  1199:13  error    Unreachable code                                             no-unreachable
+  1202:29  error    Expected '===' and instead saw '=='                          eqeqeq
+  1206:1   error    Unexpected tab character                                     no-tabs
+  1207:1   error    Unexpected tab character                                     no-tabs
+  1208:1   error    Unexpected tab character                                     no-tabs
+  1211:1   error    Unexpected tab character                                     no-tabs
+  1212:1   error    Unexpected tab character                                     no-tabs
+  1213:1   error    Unexpected tab character                                     no-tabs
+  1215:13  error    Unreachable code                                             no-unreachable
+  1217:13  error    Unreachable code                                             no-unreachable
+  1219:13  error    Unreachable code                                             no-unreachable
+  1221:13  error    Unreachable code                                             no-unreachable
+  1223:13  error    Unreachable code                                             no-unreachable
+  1227:13  error    Unreachable code                                             no-unreachable
+  1229:13  error    Unreachable code                                             no-unreachable
+  1231:13  error    Unreachable code                                             no-unreachable
+  1233:13  error    Unreachable code                                             no-unreachable
+  1235:13  error    Unreachable code                                             no-unreachable
+  1237:13  error    Unreachable code                                             no-unreachable
+  1239:13  error    Unreachable code                                             no-unreachable
+  1241:13  error    Unreachable code                                             no-unreachable
+  1243:13  error    Unreachable code                                             no-unreachable
+  1245:13  error    Unreachable code                                             no-unreachable
+  1247:13  error    Unreachable code                                             no-unreachable
+  1249:13  error    Unreachable code                                             no-unreachable
+  1251:13  error    Unreachable code                                             no-unreachable
+  1253:13  error    Unreachable code                                             no-unreachable
+  1255:13  error    Unreachable code                                             no-unreachable
+  1257:13  error    Unreachable code                                             no-unreachable
+  1259:13  error    Unreachable code                                             no-unreachable
+  1261:13  error    Unreachable code                                             no-unreachable
+  1263:13  error    Unreachable code                                             no-unreachable
+  1265:13  error    Unreachable code                                             no-unreachable
+  1267:13  error    Unreachable code                                             no-unreachable
+  1269:13  error    Unreachable code                                             no-unreachable
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\ports\csharp\Jison\Jison\csharp.js
+    1:1    error    Unexpected Unicode BOM (Byte Order Mark)                               unicode-bom
+    6:1    error    'GLOBAL' is not defined                                                no-undef
+   13:1    error    Expected error to be handled                                           n/handle-callback-err
+   13:10   error    'puts' is defined but never used                                       no-unused-vars
+   14:3    error    'util.puts' was deprecated since v0.12.0. Use 'console.log()' instead  n/no-deprecated-api
+   25:3    error    String prototype is read only, properties should not be added          no-extend-native
+   28:3    error    Expected an assignment or function call and instead saw an expression  no-unused-expressions
+   28:3    error    'comments' is not defined                                              no-undef
+   28:70   error    Unexpected use of comma operator                                       no-sequences
+   29:3    error    'requirePath' is not defined                                           no-undef
+   33:26   error    'requirePath' is not defined                                           no-undef
+   42:8    warning  Unexpected var, use let or const instead                               no-var
+   47:9    error    'options' is assigned a value but never used                           no-unused-vars
+   67:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   68:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   69:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   70:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   71:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   72:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   73:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   74:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   75:23   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   77:1    error    Unexpected tab character                                               no-tabs
+   77:2    error    Mixed spaces and tabs                                                  no-mixed-spaces-and-tabs
+   78:1    error    Unexpected tab character                                               no-tabs
+   78:2    error    Mixed spaces and tabs                                                  no-mixed-spaces-and-tabs
+   81:1    error    Unexpected tab character                                               no-tabs
+   81:2    error    Mixed spaces and tabs                                                  no-mixed-spaces-and-tabs
+   84:1    error    Unexpected tab character                                               no-tabs
+   84:2    error    Mixed spaces and tabs                                                  no-mixed-spaces-and-tabs
+   86:11   error    'comments' is not defined                                              no-undef
+   96:45   error    Unnecessary escape character: \/                                       no-useless-escape
+   96:105  error    Unnecessary escape character: \/                                       no-useless-escape
+   98:4    error    Mixed spaces and tabs                                                  no-mixed-spaces-and-tabs
+   98:5    error    Unexpected tab character                                               no-tabs
+  108:10   warning  Unexpected var, use let or const instead                               no-var
+  108:14   error    'i' is already defined                                                 no-redeclare
+  119:35   error    Use path.join() or path.resolve() instead of string concatenation      n/no-path-concat
+  140:10   warning  Unexpected var, use let or const instead                               no-var
+  147:10   warning  Unexpected var, use let or const instead                               no-var
+  147:14   error    'i' is already defined                                                 no-redeclare
+  148:7    warning  Unexpected var, use let or const instead                               no-var
+  156:10   warning  Unexpected var, use let or const instead                               no-var
+  156:14   error    'i' is already defined                                                 no-redeclare
+  162:10   warning  Unexpected var, use let or const instead                               no-var
+  162:14   error    'i' is already defined                                                 no-redeclare
+  166:9    warning  Unexpected var, use let or const instead                               no-var
+  167:9    warning  Unexpected var, use let or const instead                               no-var
+  169:27   error    Expected '===' and instead saw '=='                                    eqeqeq
+  194:10   warning  Unexpected var, use let or const instead                               no-var
+  194:14   error    'i' is already defined                                                 no-redeclare
+  195:7    warning  Unexpected var, use let or const instead                               no-var
+  195:11   error    'action' is already defined                                            no-redeclare
+  196:7    warning  Unexpected var, use let or const instead                               no-var
+  196:11   error    'state' is already defined                                             no-redeclare
+  202:10   warning  Unexpected var, use let or const instead                               no-var
+  202:14   error    'i' is already defined                                                 no-redeclare
+  205:9    warning  Unexpected var, use let or const instead                               no-var
+  205:13   error    'symbol' is already defined                                            no-redeclare
+  209:9    warning  Unexpected var, use let or const instead                               no-var
+  209:13   error    'symbol' is already defined                                            no-redeclare
+  221:5    error    Expected an assignment or function call and instead saw an expression  no-unused-expressions
+  221:20   error    Unexpected use of comma operator                                       no-sequences
+  224:10   warning  Unexpected var, use let or const instead                               no-var
+  230:10   warning  Unexpected var, use let or const instead                               no-var
+  230:14   error    'i' is already defined                                                 no-redeclare
+  240:4    error    Mixed spaces and tabs                                                  no-mixed-spaces-and-tabs
+  240:5    error    Unexpected tab character                                               no-tabs
+  240:15   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+  241:14   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+  242:14   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+  243:14   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+  244:14   error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\ports\php\php.js
+    1:1   error    Unexpected Unicode BOM (Byte Order Mark)                               unicode-bom
+   13:1   error    Expected error to be handled                                           n/handle-callback-err
+   13:10  error    'puts' is defined but never used                                       no-unused-vars
+   14:3   error    'util.puts' was deprecated since v0.12.0. Use 'console.log()' instead  n/no-deprecated-api
+   25:3   error    String prototype is read only, properties should not be added          no-extend-native
+   42:8   warning  Unexpected var, use let or const instead                               no-var
+   47:9   error    'options' is assigned a value but never used                           no-unused-vars
+   67:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   68:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   69:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   70:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   71:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   72:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   74:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   75:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   76:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   77:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   78:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   79:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   80:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   81:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+   82:23  error    Use a regular expression literal instead of the 'RegExp' constructor   prefer-regex-literals
+  104:8   warning  Unexpected var, use let or const instead                               no-var
+  104:12  error    'i' is already defined                                                 no-redeclare
+  114:35  error    Use path.join() or path.resolve() instead of string concatenation      n/no-path-concat
+  135:10  warning  Unexpected var, use let or const instead                               no-var
+  144:10  warning  Unexpected var, use let or const instead                               no-var
+  144:14  error    'i' is already defined                                                 no-redeclare
+  145:7   warning  Unexpected var, use let or const instead                               no-var
+  153:10  warning  Unexpected var, use let or const instead                               no-var
+  153:14  error    'i' is already defined                                                 no-redeclare
+  159:10  warning  Unexpected var, use let or const instead                               no-var
+  159:14  error    'i' is already defined                                                 no-redeclare
+  163:9   warning  Unexpected var, use let or const instead                               no-var
+  164:9   warning  Unexpected var, use let or const instead                               no-var
+  166:27  error    Expected '===' and instead saw '=='                                    eqeqeq
+  191:10  warning  Unexpected var, use let or const instead                               no-var
+  191:14  error    'i' is already defined                                                 no-redeclare
+  192:7   warning  Unexpected var, use let or const instead                               no-var
+  192:11  error    'action' is already defined                                            no-redeclare
+  193:7   warning  Unexpected var, use let or const instead                               no-var
+  193:11  error    'state' is already defined                                             no-redeclare
+  199:10  warning  Unexpected var, use let or const instead                               no-var
+  199:14  error    'i' is already defined                                                 no-redeclare
+  202:9   warning  Unexpected var, use let or const instead                               no-var
+  202:13  error    'symbol' is already defined                                            no-redeclare
+  206:9   warning  Unexpected var, use let or const instead                               no-var
+  206:13  error    'symbol' is already defined                                            no-redeclare
+  218:5   error    Expected an assignment or function call and instead saw an expression  no-unused-expressions
+  218:20  error    Unexpected use of comma operator                                       no-sequences
+  221:10  warning  Unexpected var, use let or const instead                               no-var
+  227:10  warning  Unexpected var, use let or const instead                               no-var
+  227:14  error    'i' is already defined                                                 no-redeclare
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\actions.js
+  364:16  error  'test' is defined but never used  no-unused-vars
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\api.js
+   80:9   error  'parser' is assigned a value but never used  no-unused-vars
+   94:31  error  Do not use 'new' for side effects            no-new
+  239:30  error  Expected '===' and instead saw '=='          eqeqeq
+  240:27  error  Expected '===' and instead saw '=='          eqeqeq
+  370:9   error  'loc' is assigned a value but never used     no-unused-vars
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\errorlab.js
+  147:31  error  Expected an assignment or function call and instead saw an expression  no-unused-expressions
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\generator.js
+   31:9   error  'define' is assigned a value but never used                 no-unused-vars
+   35:3   error  eval can be harmful                                         no-eval
+   63:3   error  eval can be harmful                                         no-eval
+   90:3   error  eval can be harmful                                         no-eval
+   92:13  error  'parser' is not defined                                     no-undef
+  117:3   error  eval can be harmful                                         no-eval
+  119:13  error  'parsey' is not defined                                     no-undef
+  146:3   error  eval can be harmful                                         no-eval
+  165:15  error  'yytext' is not defined                                     no-undef
+  165:29  error  'yyleng' is not defined                                     no-undef
+  165:41  error  Expected '===' and instead saw '=='                         eqeqeq
+  167:13  error  'yytext' is not defined                                     no-undef
+  167:22  error  'yytext' is not defined                                     no-undef
+  167:39  error  'yyleng' is not defined                                     no-undef
+  170:13  error  'yytext' is not defined                                     no-undef
+  170:22  error  'yytext' is not defined                                     no-undef
+  225:3   error  eval can be harmful                                         no-eval
+  227:13  error  'parser' is not defined                                     no-undef
+  248:9   error  'exports' is assigned a value but never used                no-unused-vars
+  249:3   error  eval can be harmful                                         no-eval
+  251:16  error  'parser' is not defined                                     no-undef
+  272:9   error  'exports' is assigned a value but never used                no-unused-vars
+  273:3   error  eval can be harmful                                         no-eval
+  275:16  error  'parser' is not defined                                     no-undef
+  294:3   error  eval can be harmful                                         no-eval
+  296:17  error  'parser' is not defined                                     no-undef
+  300:3   error  'parser' is not defined                                     no-undef
+  302:19  error  'parser' is not defined                                     no-undef
+  323:9   error  'exports' is assigned a value but never used                no-unused-vars
+  324:3   error  eval can be harmful                                         no-eval
+  326:16  error  'parser' is not defined                                     no-undef
+  346:10  error  Array.prototype.map() expects a return value from function  array-callback-return
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\lalr.js
+  147:9    error  'parser2' is assigned a value but never used  no-unused-vars
+  174:808  error  Unexpected tab character                      no-tabs
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\lr1.js
+  61:15  error  'yytext' is not defined              no-undef
+  61:29  error  'yyleng' is not defined              no-undef
+  61:41  error  Expected '===' and instead saw '=='  eqeqeq
+  63:13  error  'yytext' is not defined              no-undef
+  63:22  error  'yytext' is not defined              no-undef
+  63:39  error  'yyleng' is not defined              no-undef
+  66:13  error  'yytext' is not defined              no-undef
+  66:22  error  'yytext' is not defined              no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\precedence.js
+    5:7  error  'lexData' is assigned a value but never used  no-unused-vars
+  205:9  error  'lexData' is assigned a value but never used  no-unused-vars
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\parser\slr.js
+  29:27  error  Expected '===' and instead saw '=='  eqeqeq
+  47:30  error  Expected '===' and instead saw '=='  eqeqeq
+  48:27  error  Expected '===' and instead saw '=='  eqeqeq
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\tests\performance.js
+  107:7  error  'parser' is assigned a value but never used  no-unused-vars
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\calculator.js
+   13:11   error  Unreachable code                                no-unreachable
+   67:17   error  Expected '===' and instead saw '=='             eqeqeq
+   85:144  error  'recovered' is assigned a value but never used  no-unused-vars
+  113:26   error  Expected '===' and instead saw '=='             eqeqeq
+  114:24   error  Expected '===' and instead saw '=='             eqeqeq
+  115:15   error  Expected an error object to be thrown           no-throw-literal
+  131:23   error  Expected '===' and instead saw '=='             eqeqeq
+  132:15   error  Expected an error object to be thrown           no-throw-literal
+  205:7    error  Unreachable code                                no-unreachable
+  285:21   error  Unnecessary '.call()'                           no-useless-call
+  290:25   error  Expected '===' and instead saw '=='             eqeqeq
+  311:11   error  Unreachable code                                no-unreachable
+  313:11   error  Unreachable code                                no-unreachable
+  315:11   error  Unreachable code                                no-unreachable
+  317:11   error  Unreachable code                                no-unreachable
+  319:11   error  Unreachable code                                no-unreachable
+  321:11   error  Unreachable code                                no-unreachable
+  323:11   error  Unreachable code                                no-unreachable
+  325:11   error  Unreachable code                                no-unreachable
+  327:11   error  Unreachable code                                no-unreachable
+  329:11   error  Unreachable code                                no-unreachable
+  331:11   error  Unreachable code                                no-unreachable
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\es5.js
+   20:9   error    Opening curly brace does not appear on the same line as controlling statement  brace-style
+   23:9   error    Opening curly brace does not appear on the same line as controlling statement  brace-style
+   65:3   error    String prototype is read only, properties should not be added                  no-extend-native
+   77:48  error    Expected '===' and instead saw '=='                                            eqeqeq
+   83:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+   96:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  112:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  124:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  135:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  147:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  152:13  error    Expected '===' and instead saw '=='                                            eqeqeq
+  152:38  error    Expected '===' and instead saw '=='                                            eqeqeq
+  156:7   warning  Unexpected var, use let or const instead                                       no-var
+  170:29  error    Unnecessary '.call()'                                                          no-useless-call
+  180:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  185:13  error    Expected '===' and instead saw '=='                                            eqeqeq
+  185:38  error    Expected '===' and instead saw '=='                                            eqeqeq
+  189:7   warning  Unexpected var, use let or const instead                                       no-var
+  203:29  error    Unnecessary '.call()'                                                          no-useless-call
+  211:3   error    Array prototype is read only, properties should not be added                   no-extend-native
+  213:19  error    Expected '===' and instead saw '=='                                            eqeqeq
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\jquery.js
+    14:20   error    Shadowing of global property 'undefined'                                                      no-shadow-restricted-names
+    18:5    error    'rootjQuery' is never reassigned. Use 'const' instead                                         prefer-const
+    37:9    error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+    39:9    error    Identifier 'core_version' is not in camel case                                                camelcase
+    42:9    error    Identifier 'core_concat' is not in camel case                                                 camelcase
+    42:23   error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+    43:9    error    Identifier 'core_push' is not in camel case                                                   camelcase
+    43:21   error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+    44:9    error    Identifier 'core_slice' is not in camel case                                                  camelcase
+    44:22   error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+    45:9    error    Identifier 'core_indexOf' is not in camel case                                                camelcase
+    45:24   error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+    46:9    error    Identifier 'core_toString' is not in camel case                                               camelcase
+    47:9    error    Identifier 'core_hasOwn' is not in camel case                                                 camelcase
+    48:9    error    Identifier 'core_trim' is not in camel case                                                   camelcase
+    48:21   error    Identifier 'core_version' is not in camel case                                                camelcase
+    53:26   error    A constructor name should not start with a lowercase letter                                   new-cap
+    57:9    error    Identifier 'core_pnum' is not in camel case                                                   camelcase
+    60:9    error    Identifier 'core_rnotwhite' is not in camel case                                              camelcase
+    76:34   error    Unnecessary escape character: \/                                                              no-useless-escape
+   103:13   error    Identifier 'core_version' is not in camel case                                                camelcase
+   218:14   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+   262:29   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+   291:11   error    Identifier 'core_push' is not in camel case                                                   camelcase
+   432:33   error    Expected '===' and instead saw '=='                                                           eqeqeq
+   442:22   error    Identifier 'core_toString' is not in camel case                                               camelcase
+   456:1    error    Unexpected tab character                                                                      no-tabs
+   456:6    error    Identifier 'core_hasOwn' is not in camel case                                                 camelcase
+   457:1    error    Unexpected tab character                                                                      no-tabs
+   457:6    error    Identifier 'core_hasOwn' is not in camel case                                                 camelcase
+   469:24   error    Empty block statement                                                                         no-empty
+   471:35   error    Identifier 'core_hasOwn' is not in camel case                                                 camelcase
+   476:7    error    Invalid loop. Its body allows only one iteration                                              no-unreachable-loop
+   535:21   error    The Function constructor is eval                                                              no-new-func
+   551:21   error    'DOMParser' is not defined                                                                    no-undef
+   554:21   error    'ActiveXObject' is not defined                                                                no-undef
+   578:11   error    Unnecessary '.call()'                                                                         no-useless-call
+   644:11   error    Identifier 'core_trim' is not in camel case                                                   camelcase
+   644:25   error    Identifier 'core_trim' is not in camel case                                                   camelcase
+   648:13   error    Identifier 'core_trim' is not in camel case                                                   camelcase
+   670:11   error    Identifier 'core_push' is not in camel case                                                   camelcase
+   681:13   error    Identifier 'core_indexOf' is not in camel case                                                camelcase
+   682:18   error    Identifier 'core_indexOf' is not in camel case                                                camelcase
+   768:14   error    Identifier 'core_concat' is not in camel case                                                 camelcase
+   792:7    error    'args' is never reassigned. Use 'const' instead                                               prefer-const
+   792:14   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+   793:7    error    'proxy' is never reassigned. Use 'const' instead                                              prefer-const
+   794:54   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+   934:29   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+   934:52   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+   935:1    error    Unexpected tab character                                                                      no-tabs
+   935:17   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+   936:1    error    Unexpected tab character                                                                      no-tabs
+   936:44   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+   956:3    error    Unexpected tab character                                                                      no-tabs
+   957:3    error    Unexpected tab character                                                                      no-tabs
+   964:3    error    Unexpected tab character                                                                      no-tabs
+   964:9    error    Unexpected tab character                                                                      no-tabs
+   966:3    error    Unexpected tab character                                                                      no-tabs
+   966:11   error    Unexpected tab character                                                                      no-tabs
+   967:3    error    Unexpected tab character                                                                      no-tabs
+   968:3    error    Unexpected tab character                                                                      no-tabs
+   970:3    error    Unexpected tab character                                                                      no-tabs
+   970:11   error    Unexpected tab character                                                                      no-tabs
+   972:3    error    Unexpected tab character                                                                      no-tabs
+   972:16   error    Unexpected tab character                                                                      no-tabs
+  1006:14   error    'list' is not modified in this loop                                                           no-unmodified-loop-condition
+  1026:5    warning  Unexpected var, use let or const instead                                                      no-var
+  1145:7    warning  Unexpected var, use let or const instead                                                      no-var
+  1184:7    warning  Unexpected var, use let or const instead                                                      no-var
+  1230:29   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+  1243:46   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+  1310:5    error    'support' is never reassigned. Use 'const' instead                                            prefer-const
+  1512:1    error    Unexpected tab character                                                                      no-tabs
+  1547:62   error    'Modernizr' is not defined                                                                    no-undef
+  1548:59   error    'Modernizr' is not defined                                                                    no-undef
+  1586:34   error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+  1722:54   error    Expected '!==' and instead saw '!='                                                           eqeqeq
+  1736:26   error    Identifier 'core_version' is not in camel case                                                camelcase
+  1774:22   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  1774:41   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  1844:18   error    Expected newline between test and consequent of ternary expression                            multiline-ternary
+  1845:15   error    Expected newline between test and consequent of ternary expression                            multiline-ternary
+  1846:17   error    Expected newline between test and consequent of ternary expression                            multiline-ternary
+  2025:21   error    'boolHook' is never reassigned. Use 'const' instead                                           prefer-const
+  2103:46   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2103:75   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2215:7    error    'isFunction' is never reassigned. Use 'const' instead                                         prefer-const
+  2280:1    error    Unexpected tab character                                                                      no-tabs
+  2281:1    error    Unexpected tab character                                                                      no-tabs
+  2282:1    error    Unexpected tab character                                                                      no-tabs
+  2328:7    error    'notxml' is never reassigned. Use 'const' instead                                             prefer-const
+  2373:1    error    Unexpected tab character                                                                      no-tabs
+  2429:7    error    'notxml' is never reassigned. Use 'const' instead                                             prefer-const
+  2461:46   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2461:80   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2499:30   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2499:49   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2501:44   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2501:68   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2631:11   error    Expected an assignment or function call and instead saw an expression                         no-unused-expressions
+  2635:13   error    Expected an assignment or function call and instead saw an expression                         no-unused-expressions
+  2829:1    error    Unexpected tab character                                                                      no-tabs
+  2830:1    error    Unexpected tab character                                                                      no-tabs
+  2831:1    error    Unexpected tab character                                                                      no-tabs
+  2831:52   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2831:73   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  2891:11   error    Expected newline between test and consequent of ternary expression                            multiline-ternary
+  2901:7    error    'ontype' is never reassigned. Use 'const' instead                                             prefer-const
+  2914:7    error    'special' is never reassigned. Use 'const' instead                                            prefer-const
+  2921:7    error    'eventPath' is never reassigned. Use 'const' instead                                          prefer-const
+  2956:1    error    Unexpected tab character                                                                      no-tabs
+  2995:20   error    Identifier 'core_slice' is not in camel case                                                  camelcase
+  3011:38   error    Expected '!==' and instead saw '!='                                                           eqeqeq
+  3051:32   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3051:54   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:49   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:67   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:67   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:75   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:107  error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:125  error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:125  error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3107:133  error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:49   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:66   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:66   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:74   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:105  error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:122  error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:122  error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3108:130  error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3270:84   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3271:1    error    Unexpected tab character                                                                      no-tabs
+  3271:26   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3286:26   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3286:43   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3618:1    error    Unexpected tab character                                                                      no-tabs
+  3619:1    error    Unexpected tab character                                                                      no-tabs
+  3641:22   error    Shadowing of global property 'undefined'                                                      no-shadow-restricted-names
+  3644:9    error    'Expr' is never reassigned. Use 'const' instead                                               prefer-const
+  3647:9    error    'compile' is never reassigned. Use 'const' instead                                            prefer-const
+  3652:9    error    'setDocument' is never reassigned. Use 'const' instead                                        prefer-const
+  3732:1    error    Unexpected tab character                                                                      no-tabs
+  3751:34   error    Unnecessary escape character: \-                                                              no-useless-escape
+  3751:52   error    Unnecessary escape character: \-                                                              no-useless-escape
+  3764:31   error    Unnecessary escape character: \=                                                              no-useless-escape
+  3774:1    error    Unexpected tab character                                                                      no-tabs
+  3775:1    error    Unexpected tab character                                                                      no-tabs
+  3779:1    error    Unexpected tab character                                                                      no-tabs
+  3783:1    error    Unexpected tab character                                                                      no-tabs
+  3784:1    error    Unexpected tab character                                                                      no-tabs
+  3785:1    error    Unexpected tab character                                                                      no-tabs
+  3791:1    error    Unexpected tab character                                                                      no-tabs
+  3792:1    error    Unexpected tab character                                                                      no-tabs
+  3793:1    error    Unexpected tab character                                                                      no-tabs
+  3809:7    error    Expected an assignment or function call and instead saw an expression                         no-unused-expressions
+  3863:1    error    Unexpected tab character                                                                      no-tabs
+  3906:50   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3906:72   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3934:5    error    'isXML' is never reassigned. Use 'const' instead                                              prefer-const
+  3947:17   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3947:38   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  3998:1    error    Unexpected tab character                                                                      no-tabs
+  3999:1    error    Unexpected tab character                                                                      no-tabs
+  4000:1    error    Unexpected tab character                                                                      no-tabs
+  4001:1    error    Unexpected tab character                                                                      no-tabs
+  4013:73   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4014:1    error    Unexpected tab character                                                                      no-tabs
+  4029:49   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4044:49   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4048:29   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4048:62   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4048:75   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4057:59   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4066:55   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4091:50   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4092:44   error    'name' is not defined                                                                         no-undef
+  4098:55   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4159:1    error    Unexpected tab character                                                                      no-tabs
+  4160:1    error    Unexpected tab character                                                                      no-tabs
+  4161:1    error    Unexpected tab character                                                                      no-tabs
+  4162:1    error    Unexpected tab character                                                                      no-tabs
+  4213:29   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4213:45   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4242:82   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4242:100  error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4316:48   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4317:1    error    Unexpected tab character                                                                      no-tabs
+  4318:1    error    Unexpected tab character                                                                      no-tabs
+  4319:1    error    Unexpected tab character                                                                      no-tabs
+  4319:20   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4438:5    error    'getText' is never reassigned. Use 'const' instead                                            prefer-const
+  4503:1    error    Unexpected tab character                                                                      no-tabs
+  4504:1    error    Unexpected tab character                                                                      no-tabs
+  4505:1    error    Unexpected tab character                                                                      no-tabs
+  4506:1    error    Unexpected tab character                                                                      no-tabs
+  4507:1    error    Unexpected tab character                                                                      no-tabs
+  4508:1    error    Unexpected tab character                                                                      no-tabs
+  4509:1    error    Unexpected tab character                                                                      no-tabs
+  4510:1    error    Unexpected tab character                                                                      no-tabs
+  4511:1    error    Unexpected tab character                                                                      no-tabs
+  4547:1    error    Unexpected tab character                                                                      no-tabs
+  4548:1    error    Unexpected tab character                                                                      no-tabs
+  4549:1    error    Unexpected tab character                                                                      no-tabs
+  4550:1    error    Unexpected tab character                                                                      no-tabs
+  4577:26   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4578:1    error    Unexpected tab character                                                                      no-tabs
+  4578:93   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4579:1    error    Unexpected tab character                                                                      no-tabs
+  4580:1    error    Unexpected tab character                                                                      no-tabs
+  4580:4    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  4580:75   error    Typeof comparisons should be to string literals                                               valid-typeof
+  4581:1    error    Unexpected tab character                                                                      no-tabs
+  4661:54   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4661:67   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4663:1    error    Unexpected tab character                                                                      no-tabs
+  4664:1    error    Unexpected tab character                                                                      no-tabs
+  4679:54   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4679:67   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4680:1    error    Unexpected tab character                                                                      no-tabs
+  4708:1    error    Unexpected tab character                                                                      no-tabs
+  4720:36   error    Do not access Object.prototype method 'hasOwnProperty' from target object                     no-prototype-builtins
+  4797:30   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4797:63   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4840:13   error    Expected an assignment or function call and instead saw an expression                         no-unused-expressions
+  4876:35   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4876:61   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  4884:1    error    Unexpected tab character                                                                      no-tabs
+  4885:1    error    Unexpected tab character                                                                      no-tabs
+  4953:7    error    'groups' is never reassigned. Use 'const' instead                                             prefer-const
+  4954:7    error    'preFilters' is never reassigned. Use 'const' instead                                         prefer-const
+  4980:1    error    Unexpected tab character                                                                      no-tabs
+  5159:1    error    Unexpected tab character                                                                      no-tabs
+  5247:28   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5247:41   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5247:77   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5247:99   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5312:1    error    Unexpected tab character                                                                      no-tabs
+  5377:1    error    Unexpected tab character                                                                      no-tabs
+  5378:1    error    Unexpected tab character                                                                      no-tabs
+  5399:47   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5399:69   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5434:27   error    A constructor name should not start with a lowercase letter                                   new-cap
+  5451:27   error    Unnecessary escape character: \[                                                              no-useless-escape
+  5451:29   error    Unnecessary escape character: \.                                                              no-useless-escape
+  5467:55   error    Array.prototype.filter() expects a value to be returned at the end of function                array-callback-return
+  5492:26   error    Array.prototype.filter() expects a value to be returned at the end of function                array-callback-return
+  5667:44   error    'until' is not modified in this loop                                                          no-unmodified-loop-condition
+  5667:54   error    'undefined' is not modified in this loop                                                      no-unmodified-loop-condition
+  5734:3    warning  Unexpected var, use let or const instead                                                      no-var
+  5735:1    error    Unexpected tab character                                                                      no-tabs
+  5744:9    error    Identifier 'manipulation_rcheckableType' is not in camel case                                 camelcase
+  5776:42   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5776:67   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5941:1    error    Unexpected tab character                                                                      no-tabs
+  5942:1    error    Unexpected tab character                                                                      no-tabs
+  5943:1    error    Unexpected tab character                                                                      no-tabs
+  5981:20   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5981:43   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  5999:14   error    Identifier 'core_concat' is not in camel case                                                 camelcase
+  6067:1    error    Unexpected tab character                                                                      no-tabs
+  6158:5    error    'nodeName' is never reassigned. Use 'const' instead                                           prefer-const
+  6191:40   error    Identifier 'manipulation_rcheckableType' is not in camel case                                 camelcase
+  6235:9    error    Identifier 'core_push' is not in camel case                                                   camelcase
+  6261:30   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  6261:37   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  6268:9    error    Identifier 'manipulation_rcheckableType' is not in camel case                                 camelcase
+  6288:1    error    Unexpected tab character                                                                      no-tabs
+  6490:15   error    Identifier 'core_deletedIds' is not in camel case                                             camelcase
+  6505:39   error    Identifier 'core_pnum' is not in camel case                                                   camelcase
+  6506:39   error    Identifier 'core_pnum' is not in camel case                                                   camelcase
+  6507:44   error    Identifier 'core_pnum' is not in camel case                                                   camelcase
+  6686:7    error    'hooks' is never reassigned. Use 'const' instead                                              prefer-const
+  6700:27   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  6700:48   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  6743:7    error    'hooks' is never reassigned. Use 'const' instead                                              prefer-const
+  6779:7    error    'ret' is never reassigned. Use 'const' instead                                                prefer-const
+  6960:1    error    Unexpected tab character                                                                      no-tabs
+  6961:1    error    Unexpected tab character                                                                      no-tabs
+  6961:2    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  6962:1    error    Unexpected tab character                                                                      no-tabs
+  6962:2    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  6963:1    error    Unexpected tab character                                                                      no-tabs
+  6963:2    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  6964:1    error    Unexpected tab character                                                                      no-tabs
+  6964:2    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  6965:1    error    Unexpected tab character                                                                      no-tabs
+  6965:2    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  6966:1    error    Unexpected tab character                                                                      no-tabs
+  6971:12   error    Identifier 'css_defaultDisplay' is not in camel case                                          camelcase
+  6982:1    error    Unexpected tab character                                                                      no-tabs
+  6983:1    error    Unexpected tab character                                                                      no-tabs
+  6983:4    error    Mixed spaces and tabs                                                                         no-mixed-spaces-and-tabs
+  7053:37   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7053:60   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7062:1    error    Unexpected tab character                                                                      no-tabs
+  7063:1    error    Unexpected tab character                                                                      no-tabs
+  7070:28   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7070:44   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7145:1    error    Unexpected tab character                                                                      no-tabs
+  7176:1    error    Unexpected tab character                                                                      no-tabs
+  7177:1    error    Unexpected tab character                                                                      no-tabs
+  7177:23   error    Identifier 'manipulation_rcheckableType' is not in camel case                                 camelcase
+  7256:7    error    Identifier 'ajax_nonce' is not in camel case                                                  camelcase
+  7258:9    error    Identifier 'ajax_rquery' is not in camel case                                                 camelcase
+  7266:39   error    Unnecessary escape character: \/                                                              no-useless-escape
+  7272:1    error    Unexpected tab character                                                                      no-tabs
+  7273:1    error    Unexpected tab character                                                                      no-tabs
+  7274:1    error    Unexpected tab character                                                                      no-tabs
+  7275:1    error    Unexpected tab character                                                                      no-tabs
+  7276:1    error    Unexpected tab character                                                                      no-tabs
+  7277:1    error    Unexpected tab character                                                                      no-tabs
+  7278:1    error    Unexpected tab character                                                                      no-tabs
+  7279:1    error    Unexpected tab character                                                                      no-tabs
+  7283:1    error    Unexpected tab character                                                                      no-tabs
+  7284:1    error    Unexpected tab character                                                                      no-tabs
+  7285:1    error    Unexpected tab character                                                                      no-tabs
+  7286:1    error    Unexpected tab character                                                                      no-tabs
+  7305:3    error    'ajaxLocParts' is never reassigned. Use 'const' instead                                       prefer-const
+  7358:42   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7358:61   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7478:1    error    Unexpected tab character                                                                      no-tabs
+  7479:1    error    Unexpected tab character                                                                      no-tabs
+  7480:1    error    Unexpected tab character                                                                      no-tabs
+  7481:1    error    Unexpected tab character                                                                      no-tabs
+  7482:1    error    Unexpected tab character                                                                      no-tabs
+  7483:1    error    Unexpected tab character                                                                      no-tabs
+  7484:1    error    Unexpected tab character                                                                      no-tabs
+  7485:1    error    Unexpected tab character                                                                      no-tabs
+  7486:1    error    Unexpected tab character                                                                      no-tabs
+  7487:1    error    Unexpected tab character                                                                      no-tabs
+  7597:7    warning  Unexpected var, use let or const instead                                                      no-var
+  7687:1    error    Unexpected tab character                                                                      no-tabs
+  7688:1    error    Unexpected tab character                                                                      no-tabs
+  7688:54   error    Expected '!==' and instead saw '!='                                                           eqeqeq
+  7689:1    error    Unexpected tab character                                                                      no-tabs
+  7707:7    error    'fireGlobals' is never reassigned. Use 'const' instead                                        prefer-const
+  7728:33   error    Identifier 'ajax_rquery' is not in camel case                                                 camelcase
+  7738:46   error    Identifier 'ajax_nonce' is not in camel case                                                  camelcase
+  7741:27   error    Identifier 'ajax_rquery' is not in camel case                                                 camelcase
+  7741:76   error    Identifier 'ajax_nonce' is not in camel case                                                  camelcase
+  7756:34   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7756:61   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7855:27   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  7855:43   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  8040:1    error    Unexpected tab character                                                                      no-tabs
+  8143:17   error    Unexpected literal in error position of callback                                              n/no-callback-literal
+  8168:71   error    Identifier 'ajax_nonce' is not in camel case                                                  camelcase
+  8193:19   error    Identifier 'ajax_rquery' is not in camel case                                                 camelcase
+  8267:1    error    Unexpected tab character                                                                      no-tabs
+  8268:1    error    Unexpected tab character                                                                      no-tabs
+  8269:1    error    Unexpected tab character                                                                      no-tabs
+  8270:1    error    Unexpected tab character                                                                      no-tabs
+  8271:1    error    Unexpected tab character                                                                      no-tabs
+  8273:28   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  8273:51   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  8453:48   error    Identifier 'core_pnum' is not in camel case                                                   camelcase
+  8530:5    warning  Unexpected var, use let or const instead                                                      no-var
+  8552:5    warning  Unexpected var, use let or const instead                                                      no-var
+  8732:1    error    Unexpected tab character                                                                      no-tabs
+  8767:5    error    'length' is never reassigned. Use 'const' instead                                             prefer-const
+  8809:32   error    A constructor name should not start with a lowercase letter                                   new-cap
+  8865:1    error    Unexpected tab character                                                                      no-tabs
+  8873:9    error    'result' is never reassigned. Use 'const' instead                                             prefer-const
+  9027:24   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9027:31   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9027:41   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9028:1    error    Unexpected tab character                                                                      no-tabs
+  9028:29   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9030:22   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9030:32   error    Unexpected mix of '&&' and '||'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9030:32   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9030:72   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+  9146:5    error    'docElem' is never reassigned. Use 'const' instead                                            prefer-const
+  9158:5    error    'win' is never reassigned. Use 'const' instead                                                prefer-const
+  9356:39   error    'define' is not defined                                                                       no-undef
+  9356:53   error    'define' is not defined                                                                       no-undef
+  9357:5    error    'define' is not defined                                                                       no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\json2.js
+   24:5   error  Date prototype is read only, properties should not be added        no-extend-native
+   35:5   error  String prototype is read only, properties should not be added      no-extend-native
+   36:9   error  Number prototype is read only, properties should not be added      no-extend-native
+   37:9   error  Boolean prototype is read only, properties should not be added     no-extend-native
+   42:14  error  Unexpected control character(s) in regular expression: \x00        no-control-regex
+   42:14  error  Unexpected combined character in character class                   no-misleading-character-class
+   43:21  error  Unexpected control character(s) in regular expression: \x00, \x1f  no-control-regex
+   43:21  error  Unexpected combined character in character class                   no-misleading-character-class
+   43:25  error  Unnecessary escape character: \"                                   no-useless-escape
+  301:38  error  Unnecessary escape character: \/                                   no-useless-escape
+  302:75  error  Unnecessary escape character: \-                                   no-useless-escape
+  309:13  error  eval can be harmful                                                no-eval
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison.js
+     6:3    error    Unexpected assignment to 'exports' variable. Use 'module.exports' instead                     n/no-exports-assign
+    10:3    warning  Unexpected var, use let or const instead                                                      no-var
+    11:3    warning  Unexpected var, use let or const instead                                                      no-var
+    12:3    warning  Unexpected var, use let or const instead                                                      no-var
+    19:37   error    'puts' is not defined                                                                         no-undef
+    21:17   error    'print' is not defined                                                                        no-undef
+    34:17   error    Do not access Object.prototype method 'hasOwnProperty' from target object                     no-prototype-builtins
+    49:24   error    Identifier 'Nonterminal_toString' is not in camel case                                        camelcase
+    69:24   error    Identifier 'Production_toString' is not in camel case                                         camelcase
+    76:36   error    Identifier 'Jison_Generator' is not in camel case                                             camelcase
+   109:11   error    'bnf' is assigned a value but never used                                                      no-unused-vars
+   170:10   warning  Unexpected var, use let or const instead                                                      no-var
+   170:30   error    Expected a conditional expression and instead saw an assignment                               no-cond-assign
+   198:16   error    Do not access Object.prototype method 'hasOwnProperty' from target object                     no-prototype-builtins
+   209:30   error    Identifier 'buildProds_forEach' is not in camel case                                          camelcase
+   214:54   error    Unexpected use of comma operator                                                              no-sequences
+   220:62   error    Expected '===' and instead saw '=='                                                           eqeqeq
+   242:41   error    Unnecessary escape character: \$                                                              no-useless-escape
+   259:54   error    Unexpected use of comma operator                                                              no-sequences
+   281:9    error    'sym' is defined but never used                                                               no-unused-vars
+   297:26   error    The Function constructor is eval                                                              no-new-func
+   301:5    error    Expected an error object to be thrown                                                         no-throw-literal
+   317:3    warning  Unexpected var, use let or const instead                                                      no-var
+   357:36   error    Identifier 'Follow_prod_forEach' is not in camel case                                         camelcase
+   364:14   warning  Unexpected var, use let or const instead                                                      no-var
+   364:28   error    Expected a conditional expression and instead saw an assignment                               no-cond-assign
+   399:12   warning  Unexpected var, use let or const instead                                                      no-var
+   399:26   error    Expected a conditional expression and instead saw an assignment                               no-cond-assign
+   429:36   error    Identifier 'FirstSets_forEach' is not in camel case                                           camelcase
+   452:11   error    'firsts' is assigned a value but never used                                                   no-unused-vars
+   464:16   warning  Unexpected var, use let or const instead                                                      no-var
+   464:37   error    Expected a conditional expression and instead saw an assignment                               no-cond-assign
+   476:16   warning  Unexpected var, use let or const instead                                                      no-var
+   476:39   error    Expected a conditional expression and instead saw an assignment                               no-cond-assign
+   491:12   warning  Unexpected var, use let or const instead                                                      no-var
+   491:26   error    Expected a conditional expression and instead saw an assignment                               no-cond-assign
+   505:3    warning  Unexpected var, use let or const instead                                                      no-var
+   588:39   error    Identifier 'toValue_inner' is not in camel case                                               camelcase
+   602:28   error    Identifier 'CO_set_forEach' is not in camel case                                              camelcase
+   608:68   error    Identifier 'CO_nt_forEach' is not in camel case                                               camelcase
+   635:30   error    Identifier 'goto_forEach' is not in camel case                                                camelcase
+   659:32   error    Identifier 'CC_itemSet_forEach' is not in camel case                                          camelcase
+   706:33   error    Expected '===' and instead saw '=='                                                           eqeqeq
+   722:31   error    Expected '===' and instead saw '=='                                                           eqeqeq
+   741:22   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+   741:32   error    Unexpected mix of '||' and '&&'. Use parentheses to clarify the intended order of operations  no-mixed-operators
+   774:11   error    's' is assigned a value but never used                                                        no-unused-vars
+   776:11   error    'a' is assigned a value but never used                                                        no-unused-vars
+   811:40   error    Identifier 'parser_generate' is not in camel case                                             camelcase
+   884:20   error    Expected '===' and instead saw '=='                                                           eqeqeq
+   886:14   error    Expected '===' and instead saw '=='                                                           eqeqeq
+   893:3    warning  Unexpected var, use let or const instead                                                      no-var
+   919:3    warning  Unexpected var, use let or const instead                                                      no-var
+   990:15   error    Expected '===' and instead saw '=='                                                           eqeqeq
+  1008:142  error    'recovered' is assigned a value but never used                                                no-unused-vars
+  1036:24   error    Expected '===' and instead saw '=='                                                           eqeqeq
+  1037:22   error    Expected '===' and instead saw '=='                                                           eqeqeq
+  1038:13   error    Expected an error object to be thrown                                                         no-throw-literal
+  1054:21   error    Expected '===' and instead saw '=='                                                           eqeqeq
+  1055:13   error    Expected an error object to be thrown                                                         no-throw-literal
+  1128:5    error    Unreachable code                                                                              no-unreachable
+  1131:26   error    Identifier 'parser_init' is not in camel case                                                 camelcase
+  1145:32   error    Identifier 'lr0_afterconstructor' is not in camel case                                        camelcase
+  1193:26   error    Identifier 'LALR_lookaheads' is not in camel case                                             camelcase
+  1196:18   error    Identifier 'LALR_go' is not in camel case                                                     camelcase
+  1203:22   error    Identifier 'LALR_goPath' is not in camel case                                                 camelcase
+  1216:31   error    Identifier 'LALR_buildNewGrammar' is not in camel case                                        camelcase
+  1245:31   error    Identifier 'LALR_unionLookaheads' is not in camel case                                        camelcase
+  1250:31   error    Identifier 'union_states_forEach' is not in camel case                                        camelcase
+  1252:15   error    'follows' is assigned a value but never used                                                  no-unused-vars
+  1254:45   error    Identifier 'union_reduction_forEach' is not in camel case                                     camelcase
+  1259:75   error    Identifier 'reduction_goes_forEach' is not in camel case                                      camelcase
+  1260:66   error    Identifier 'goes_follows_forEach' is not in camel case                                        camelcase
+  1279:3    warning  Unexpected var, use let or const instead                                                      no-var
+  1298:32   error    Identifier 'lr_aftercontructor' is not in camel case                                          camelcase
+  1310:26   error    Identifier 'SLR_lookAhead' is not in camel case                                               camelcase
+  1321:26   error    Identifier 'LR_lookAheads' is not in camel case                                               camelcase
+  1333:32   error    Identifier 'LR_ClosureOperation' is not in camel case                                         camelcase
+  1338:28   error    'syms' is assigned a value but never used                                                     no-unused-vars
+  1378:32   error    Identifier 'll_aftercontructor' is not in camel case                                          camelcase
+  1408:30   error    Identifier 'Jison_Generator' is not in camel case                                             camelcase
+  1431:7    error    Expected a 'break' statement before 'case'                                                    no-fallthrough
+  1433:7    error    Expected a 'break' statement before 'case'                                                    no-fallthrough
+  1435:7    error    Expected a 'break' statement before 'case'                                                    no-fallthrough
+  1437:7    error    Expected a 'break' statement before 'case'                                                    no-fallthrough
+  1448:3    error    'gfile' is not defined                                                                        no-undef
+  1451:7    error    'gfile' is not defined                                                                        no-undef
+  1452:5    warning  Unexpected var, use let or const instead                                                      no-var
+  1452:30   error    'gfile' is not defined                                                                        no-undef
+  1453:14   error    'gfile' is not defined                                                                        no-undef
+  1454:5    warning  Unexpected var, use let or const instead                                                      no-var
+  1454:9    error    'grammar' is already defined                                                                  no-redeclare
+  1454:46   error    'gfile' is not defined                                                                        no-undef
+  1471:43   error    'gfile' is not defined                                                                        no-undef
+  1471:79   error    'gfile' is not defined                                                                        no-undef
+  1475:3    error    Expected an assignment or function call and instead saw an expression                         no-unused-expressions
+  1475:3    error    'fname' is not defined                                                                        no-undef
+  1475:57   error    Unexpected use of comma operator                                                              no-sequences
+  1476:3    error    'source' is not defined                                                                       no-undef
+  1477:3    error    'stream' is not defined                                                                       no-undef
+  1477:12   error    'fname' is not defined                                                                        no-undef
+  1479:3    error    'stream' is not defined                                                                       no-undef
+  1479:16   error    'source' is not defined                                                                       no-undef
+  1480:3    error    'stream' is not defined                                                                       no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\bnf.js
+   2:3  warning  Unexpected var, use let or const instead  no-var
+   3:3  warning  Unexpected var, use let or const instead  no-var
+  45:1  warning  Unexpected var, use let or const instead  no-var
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\jisonlex.js
+   2:3   warning  Unexpected var, use let or const instead  no-var
+   4:3   warning  Unexpected var, use let or const instead  no-var
+  13:59  error    Unnecessary escape character: \/          no-useless-escape
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\json2jison.js
+   18:17  error    Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   44:13  error    Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  105:22  error    Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+  115:10  warning  Unexpected var, use let or const instead                                   no-var
+  115:20  error    Expected a conditional expression and instead saw an assignment            no-cond-assign
+  135:3   error    Expected an assignment or function call and instead saw an expression      no-unused-expressions
+  135:3   error    'gfile' is not defined                                                     no-undef
+  135:42  error    Unexpected use of comma operator                                           no-sequences
+  136:3   error    'grammar' is not defined                                                   no-undef
+  136:24  error    'gfile' is not defined                                                     no-undef
+  138:7   error    'grammar' is not defined                                                   no-undef
+  139:42  error    'gfile' is not defined                                                     no-undef
+  141:29  error    'grammar' is not defined                                                   no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\lexer.js
+   20:20  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   51:20  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   54:24  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+   83:12  error  The Function constructor is eval                                           no-new-func
+  186:19  error  Unnecessary '.call()'                                                      no-useless-call
+  191:23  error  Expected '===' and instead saw '=='                                        eqeqeq
+  222:35  error  Do not access Object.prototype method 'hasOwnProperty' from target object  no-prototype-builtins
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\util\bnf-parser.js
+   17:11   error  Unreachable code                                no-unreachable
+   22:11   error  Unreachable code                                no-unreachable
+  141:17   error  Expected '===' and instead saw '=='             eqeqeq
+  157:144  error  'recovered' is assigned a value but never used  no-unused-vars
+  176:26   error  Expected '===' and instead saw '=='             eqeqeq
+  177:24   error  Expected '===' and instead saw '=='             eqeqeq
+  178:15   error  Expected an error object to be thrown           no-throw-literal
+  189:23   error  Expected '===' and instead saw '=='             eqeqeq
+  190:15   error  Expected an error object to be thrown           no-throw-literal
+  248:7    error  Unreachable code                                no-unreachable
+  331:21   error  Unnecessary '.call()'                           no-useless-call
+  339:25   error  Expected '===' and instead saw '=='             eqeqeq
+  362:11   error  Unreachable code                                no-unreachable
+  365:11   error  Unreachable code                                no-unreachable
+  369:11   error  Unreachable code                                no-unreachable
+  373:11   error  Unreachable code                                no-unreachable
+  376:11   error  Unreachable code                                no-unreachable
+  379:11   error  Unreachable code                                no-unreachable
+  382:11   error  Unreachable code                                no-unreachable
+  385:11   error  Unreachable code                                no-unreachable
+  388:11   error  Unreachable code                                no-unreachable
+  391:11   error  Unreachable code                                no-unreachable
+  394:11   error  Unreachable code                                no-unreachable
+  397:11   error  Unreachable code                                no-unreachable
+  400:11   error  Unreachable code                                no-unreachable
+  403:11   error  Unreachable code                                no-unreachable
+  410:11   error  Unreachable code                                no-unreachable
+  414:11   error  Unreachable code                                no-unreachable
+  418:11   error  Unreachable code                                no-unreachable
+  423:11   error  Unreachable code                                no-unreachable
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\util\lex-parser.js
+   22:11   error  Unreachable code                                no-unreachable
+   32:11   error  Unreachable code                                no-unreachable
+  134:17   error  Expected '===' and instead saw '=='             eqeqeq
+  150:144  error  'recovered' is assigned a value but never used  no-unused-vars
+  169:26   error  Expected '===' and instead saw '=='             eqeqeq
+  170:24   error  Expected '===' and instead saw '=='             eqeqeq
+  171:15   error  Expected an error object to be thrown           no-throw-literal
+  182:23   error  Expected '===' and instead saw '=='             eqeqeq
+  183:15   error  Expected an error object to be thrown           no-throw-literal
+  241:7    error  Unreachable code                                no-unreachable
+  324:21   error  Unnecessary '.call()'                           no-useless-call
+  332:25   error  Expected '===' and instead saw '=='             eqeqeq
+  360:11   error  Unreachable code                                no-unreachable
+  363:11   error  Unreachable code                                no-unreachable
+  367:11   error  Unreachable code                                no-unreachable
+  371:11   error  Unreachable code                                no-unreachable
+  374:11   error  Unreachable code                                no-unreachable
+  377:11   error  Unreachable code                                no-unreachable
+  380:11   error  Unreachable code                                no-unreachable
+  383:11   error  Unreachable code                                no-unreachable
+  386:11   error  Unreachable code                                no-unreachable
+  389:11   error  Unreachable code                                no-unreachable
+  392:11   error  Unreachable code                                no-unreachable
+  395:11   error  Unreachable code                                no-unreachable
+  398:11   error  Unreachable code                                no-unreachable
+  401:11   error  Unreachable code                                no-unreachable
+  404:11   error  Unreachable code                                no-unreachable
+  407:11   error  Unreachable code                                no-unreachable
+  410:11   error  Unreachable code                                no-unreachable
+  414:11   error  Unreachable code                                no-unreachable
+  417:11   error  Unreachable code                                no-unreachable
+  428:11   error  Unreachable code                                no-unreachable
+  432:11   error  Unreachable code                                no-unreachable
+  437:11   error  Unreachable code                                no-unreachable
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\util\set.js
+   3:39  warning  Unexpected var, use let or const instead           no-var
+   6:25  error    Identifier 'Set_constructor' is not in camel case  camelcase
+  36:32  error    Identifier 'sub_complement' is not in camel case   camelcase
+  73:1   warning  Unexpected var, use let or const instead           no-var
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\lib\jison\util\typal.js
+  40:12  error    Identifier 'typal_mix' is not in camel case          camelcase
+  41:11  error    'self' is assigned a value but never used            no-unused-vars
+  42:10  warning  Unexpected var, use let or const instead             no-var
+  58:10  error    Identifier 'typal_mix' is not in camel case          camelcase
+  63:21  error    Identifier 'typal_beget' is not in camel case        camelcase
+  64:33  error    Identifier 'typal_mix' is not in camel case          camelcase
+  68:25  error    Identifier 'typal_construct' is not in camel case    camelcase
+  69:17  error    Identifier 'typal_mix' is not in camel case          camelcase
+  73:19  error    Identifier 'typal_mix' is not in camel case          camelcase
+  78:27  error    Identifier 'typal_constructor' is not in camel case  camelcase
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\try.js
+   7:5   error    Read-only global 'console' should not be modified  no-global-assign
+   8:51  error    'uneval' is not defined                            no-undef
+  11:3   error    'print' is not defined                             no-undef
+  34:7   warning  Unexpected var, use let or const instead           no-var
+  37:9   warning  Unexpected var, use let or const instead           no-var
+  37:13  error    'cfg' is already defined                           no-redeclare
+  37:19  error    'bnf' is not defined                               no-undef
+  44:5   error    'Jison' is not defined                             no-undef
+  45:14  error    'Jison' is not defined                             no-undef
+  56:84  error    'Base64' is not defined                            no-undef
+  80:4   error    'jQuery' is not defined                            no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\usf.js
+    5:3    error    Read-only global 'console' should not be modified   no-global-assign
+    6:73   error    'uneval' is not defined                             no-undef
+   10:1    error    '$' is not defined                                  no-undef
+   11:3    error    '$' is not defined                                  no-undef
+   12:3    error    '$' is not defined                                  no-undef
+   14:3    error    '$' is not defined                                  no-undef
+   16:5    error    '$' is not defined                                  no-undef
+   17:5    error    '$' is not defined                                  no-undef
+   18:7    error    '$' is not defined                                  no-undef
+   19:7    error    '$' is not defined                                  no-undef
+   25:16   error    '$' is not defined                                  no-undef
+   25:38   error    '$' is not defined                                  no-undef
+   27:19   error    '$' is not defined                                  no-undef
+   29:5    warning  Unexpected var, use let or const instead            no-var
+   32:7    warning  Unexpected var, use let or const instead            no-var
+   32:11   error    'cfg' is already defined                            no-redeclare
+   32:17   error    'bnf' is not defined                                no-undef
+   34:14   error    'alert' is not defined                              no-undef
+   38:16   error    '$' is not defined                                  no-undef
+   39:8    error    '$' is not defined                                  no-undef
+   41:3    error    'Jison' is not defined                              no-undef
+   42:12   error    'Jison' is not defined                              no-undef
+   45:3    error    '$' is not defined                                  no-undef
+   52:7    error    Identifier 'do_click' is not in camel case          camelcase
+   55:12   error    Identifier 'click_handler' is not in camel case     camelcase
+   56:5    error    Identifier 'do_click' is not in camel case          camelcase
+   59:18   error    '$' is not defined                                  no-undef
+   61:11   error    Identifier 'do_click' is not in camel case          camelcase
+   63:14   error    '$' is not defined                                  no-undef
+   64:9    error    Identifier 'do_click' is not in camel case          camelcase
+   68:3    error    '$' is not defined                                  no-undef
+   69:3    error    '$' is not defined                                  no-undef
+   71:12   error    Identifier 'dblclick_handler' is not in camel case  camelcase
+   73:5    error    Identifier 'do_click' is not in camel case          camelcase
+   75:5    error    '$' is not defined                                  no-undef
+   76:9    error    '$' is not defined                                  no-undef
+   77:9    error    '$' is not defined                                  no-undef
+   80:3    error    '$' is not defined                                  no-undef
+   81:3    error    '$' is not defined                                  no-undef
+   88:18   error    '$' is not defined                                  no-undef
+  108:3    error    '$' is not defined                                  no-undef
+  117:3    error    '$' is not defined                                  no-undef
+  138:8    warning  Unexpected var, use let or const instead            no-var
+  148:3    error    '$' is not defined                                  no-undef
+  166:12   error    Expected '===' and instead saw '=='                 eqeqeq
+  169:19   error    Expected '===' and instead saw '=='                 eqeqeq
+  196:9    error    'actions' is assigned a value but never used        no-unused-vars
+  203:104  error    Expected '!==' and instead saw '!='                 eqeqeq
+  208:8    warning  Unexpected var, use let or const instead            no-var
+  218:14   error    Expected '===' and instead saw '=='                 eqeqeq
+  224:87   error    Expected '===' and instead saw '=='                 eqeqeq
+  233:3    error    '$' is not defined                                  no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\content\assets\js\webtoolkit.base64.js
+    8:1   warning  Unexpected var, use let or const instead  no-var
+   38:1   error    Unexpected tab character                  no-tabs
+   39:1   error    Unexpected tab character                  no-tabs
+   52:39  error    Unnecessary escape character: \+          no-useless-escape
+   52:41  error    Unnecessary escape character: \/          no-useless-escape
+   52:43  error    Unnecessary escape character: \=          no-useless-escape
+   66:16  error    Expected '!==' and instead saw '!='       eqeqeq
+   69:16  error    Expected '!==' and instead saw '!='       eqeqeq
+  106:13  error    'c1' is not defined                       no-undef
+  106:18  error    'c2' is not defined                       no-undef
+  115:9   error    'c2' is not defined                       no-undef
+  116:58  error    'c2' is not defined                       no-undef
+  119:9   error    'c2' is not defined                       no-undef
+  120:9   error    'c3' is not defined                       no-undef
+  121:60  error    'c2' is not defined                       no-undef
+  121:78  error    'c3' is not defined                       no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\jison\examples\json.js
+  18:13  error  'yytext' is not defined  no-undef
+  18:27  error  'yyleng' is not defined  no-undef
+  20:11  error  'yytext' is not defined  no-undef
+  20:20  error  'yytext' is not defined  no-undef
+  20:37  error  'yyleng' is not defined  no-undef
+  23:11  error  'yytext' is not defined  no-undef
+  23:20  error  'yytext' is not defined  no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\jison\examples\jsonAST.js
+  18:13  error  'yytext' is not defined  no-undef
+  18:27  error  'yyleng' is not defined  no-undef
+  20:11  error  'yytext' is not defined  no-undef
+  20:20  error  'yytext' is not defined  no-undef
+  20:37  error  'yyleng' is not defined  no-undef
+  23:11  error  'yytext' is not defined  no-undef
+  23:20  error  'yytext' is not defined  no-undef
+
+E:\Semester 8\Software Re-Engineering\Assignments\Project\jison\web\jison\main.js
+    8:3   error    Read-only global 'console' should not be modified  no-global-assign
+    9:73  error    'uneval' is not defined                            no-undef
+   43:5   warning  Unexpected var, use let or const instead           no-var
+   46:7   warning  Unexpected var, use let or const instead           no-var
+   46:11  error    'cfg' is already defined                           no-redeclare
+   46:17  error    'bnf' is not defined                               no-undef
+   48:14  error    'alert' is not defined                             no-undef
+   68:16  error    'processGrammer' is not defined                    no-undef
+  121:8   warning  Unexpected var, use let or const instead           no-var
+  190:8   warning  Unexpected var, use let or const instead           no-var
+
+✖ 1202 problems (1114 errors, 88 warnings)
+  2 errors and 0 warnings potentially fixable with the `--fix` option.
+
