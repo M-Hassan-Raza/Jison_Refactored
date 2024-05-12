@@ -33,7 +33,7 @@ bnf.yy.lexComment = function (lexer) {
 bnf.yy.lexAction = function (lexer) {
   const ch = lexer.input()
   if (ch === '}') {
-    lexer.yytext = lexer.yytext.substr(2, lexer.yyleng - 4).replace(/\}(.|\s)\{\{/, '}$1')
+    lexer.yytext = lexer.yytext.substr(2, lexer.yyleng - 4).replace(/}(.|\s)\{\{/, '}$1')
     return 'ACTION'
   } else {
     lexer.unput('{{')

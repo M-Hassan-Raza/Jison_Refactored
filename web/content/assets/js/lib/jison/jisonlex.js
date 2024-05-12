@@ -10,7 +10,7 @@ jisonlex.parse = exports.parse = function parse () {
   return parse_.apply(jisonlex, arguments)
 }
 
-function encodeRE (s) { return s.replace(/([.*+?^${}()|[\]\/\\])/g, '\\$1') }
+function encodeRE (s) { return s.replace(/([.*+?^${}()|[\]/\\])/g, '\\$1') }
 
 jisonlex.yy = {
   prepareString: function (s) {
